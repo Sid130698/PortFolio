@@ -1,0 +1,9 @@
+.education-container {
+    opacity: 0; /* Initially hide the element */
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+}
+
+.education-container.animate {
+    opacity: 1; /* Make element visible when animation is triggered */
+    /* Additional animation properties can be added here */
+}

@@ -1,0 +1,60 @@
+.outerBoxPWI {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; /* Adjust the height as needed */
+}
+
+@media (min-width: 768px) {
+  .outerBoxPWI {
+    flex-direction: row;
+  }
+}
+
+.info {
+  width :50%;
+   order: 2; /* Initially set to display below photo */
+  padding: 20px; /* Adjust padding as needed */
+  border-radius: 10px; /* Adjust border radius as needed */
+  margin: 20px; /* Adjust margin as needed */
+}
+
+@media (min-width: 768px) {
+  .info {
+    order: 1; /* Display info on the left for larger screens */
+    padding: 20px; /* Adjust padding as needed */
+    margin-right: 20px; /* Adjust margin for spacing between photo and info */
+  }
+}
+
+.photo {
+  order: 1; /* Initially set to display above info */
+  margin: 20px; /* Adjust margin as needed */
+  align-items: right; 
+  margin-top: 70vh;
+}
+
+@media (min-width: 768px) {
+  .photo {
+    order: 2; /* Display photo on the right for larger screens */
+    clip-path: ellipse(70% 45% at 50% 50%); /* Adjust clip-path for elliptical shape */
+    margin-left: 20px; /* Adjust margin for spacing between info and photo */
+    border-radius: 50%;
+    margin-top: 0;
+  }
+}
+
+.photo img {
+  width: 400px; /* Adjust width as needed */
+  height: 400px; /* Adjust height as needed */
+  object-fit: cover; /* Ensure the image covers the circular area */
+  clip-path: ellipse(70% 45% at 50% 50%);
+  border-radius: 50%;
+}
+
+.photo-frame {
+  width: 400px; /* Adjust width as needed */
+  height: 400px; /* Adjust height as needed */
+  position: relative;
+}
