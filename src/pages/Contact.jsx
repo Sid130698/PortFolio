@@ -1,6 +1,6 @@
 import React from 'react';
-import './Contact.css'; // Ensure you have this CSS file for styling
-import resume from '../assets/Siddharth_Singh_Resume.pdf'; // Adjust the path based on your folder structure
+import './Contact.css'; 
+import resume from '../assets/Resume/SiddharthSinghResume.pdf'; 
 
 const Contact = () => {
   // Function to copy phone number to clipboard
