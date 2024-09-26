@@ -9,7 +9,7 @@ const NavBar = () => {
   const outerDivStyles = {
     opacity: isHomePage ? 0.8 : 1,
     position: 'fixed',
-    backgroundColor : isHomePage ?'transparent':'rgba(255, 255, 255, 1)',
+    backgroundColor : 'rgba(255, 255, 255, 1)',
     width: '100%',
     height: '8vh',
     zIndex:12,

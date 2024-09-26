@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./photoWithInfo.css";
-import dpImage from "../../assets/images/dp.JPG"; // Import the image
+import dpImage from "../../assets/images/dp.png"; // Import the image
 
 const PhotoWithInfo = () => {
   const [typeText, setTypeText] = useState("");

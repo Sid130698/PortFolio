@@ -7,6 +7,9 @@ import AngularLogo from '../../assets/images/angular.jpg'
 import SpringBootLogo from '../../assets/images/springboot.png'
 import PythonLogo from '../../assets/images/Python.png'
 import HTMLLogo from '../../assets/images/html.png'
+import JavaScriptLogo from '../../assets/images/javaScript.png'
+import CSSLogo from '../../assets/images/css.png'
+import SQLLogo from '../../assets/images/sql.png'
 
 const SkillsAboutMe = () => {
   return (
@@ -22,9 +25,9 @@ const SkillsAboutMe = () => {
       <div className="skill-container">
         <Skill logo={PythonLogo} name="Python" />
         <Skill logo={HTMLLogo} name="Html" />
-        <Skill logo="JS" name="JS" />
-        <Skill logo="CSS" name="CSS" />
-        <Skill logo="SQL" name="SQL" />
+        <Skill logo={JavaScriptLogo} name="JS" />
+        <Skill logo={CSSLogo} name="CSS" />
+        <Skill logo={SQLLogo} name="SQL" />
       </div>
     </div>
   );
