@@ -15,6 +15,8 @@ const ProjectTimeline = ({ projects }) => {
           subtitle={project.subtitle}
           date={project.date}
           description={project.description}
+          paperLink={project.paperLink}
+          githubLink={project.githubLink}
         />
       ))}
     </VerticalTimeline>

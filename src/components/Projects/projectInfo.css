@@ -56,3 +56,31 @@
     clip-path: ellipse(70% 45% at 50% 50%); /* Clip path for elliptical shape */
     border-radius: 50%; /* Circular border */
 }
+
+.project-link {
+    color: #1E90FF;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 10px;
+    display: inline-block;
+    transition: color 0.3s ease;
+  }
+  
+  .project-link:hover {
+    color: #FF4500;
+  }
+  
+  .github-link {
+    color: #333; /* GitHub default color */
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease;
+  }
+  
+  .github-link:hover {
+    color: #4078c0; /* GitHub blue on hover */
+  }
+  
