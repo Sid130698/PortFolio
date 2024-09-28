@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import ProjectWallpaper from "../../assets/images/hero.jpg"; // Import the image
+import './projectInfo.css'; // Import the CSS file
 
 const ProjectInfo = () => {
   const [typeText, setTypeText] = useState("");
@@ -35,39 +36,9 @@ const ProjectInfo = () => {
   }, []);
 
   return (
-    <div style={{ position: 'relative', width: '100%', height: '700px', padding: '20px', backgroundColor: '#f5f5f5' }}>
-      <div
-        style={{
-          height: '100%',
-          backgroundImage: `url(${ProjectWallpaper})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          borderRadius: '10px',
-          boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
-          position: 'relative',
-        }}
-      >
-        <div
-          style={{
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            backgroundColor: 'rgba(255, 255, 255, 0.8)',
-            padding: '10px 15px',
-            borderRadius: '10px',
-            boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.2)',
-            fontSize: '1.5rem',
-            fontWeight: 'bold',
-            color: '#333',
-            width: 'fit-content',
-            maxWidth: '90%',
-            lineHeight: '1.5',
-            overflow: 'hidden',
-            whiteSpace: 'nowrap',
-            textOverflow: 'ellipsis',
-          }}
-        >
+    <div className="project-info-container">
+      <div className="project-info-background">
+        <div className="project-info-text">
           {typeText}
         </div>
       </div>
